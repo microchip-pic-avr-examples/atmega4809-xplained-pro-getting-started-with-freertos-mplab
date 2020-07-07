@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iarProjectConnection name="src" oneShot="false">
+    <device>
+        <name>ATmega4809</name>
+    </device>
+
+    <includePath>
+        <path>$PROJ_DIR$\config</path>
+        <path>$PROJ_DIR$\include</path>
+        <path>$PROJ_DIR$\utils</path>
+        <path>$PROJ_DIR$\utils\assembler</path>
+        <path>$PROJ_DIR$\freeRTOS\portable\MemMang</path>
+        <path>$PROJ_DIR$\OLED</path>
+        <path>$PROJ_DIR$\freeRTOS\portable\GCC\ATmega4809</path>
+        <path>$PROJ_DIR$\freeRTOS\include</path>
+        <path>$PROJ_DIR$\</path>
+    </includePath>
+
+    <asmIncludePath>
+        <path>$PROJ_DIR$\config</path>
+        <path>$PROJ_DIR$\include</path>
+        <path>$PROJ_DIR$\utils</path>
+        <path>$PROJ_DIR$\utils\assembler</path>
+        <path>$PROJ_DIR$\freeRTOS\portable\MemMang</path>
+        <path>$PROJ_DIR$\OLED</path>
+        <path>$PROJ_DIR$\freeRTOS\portable\GCC\ATmega4809</path>
+        <path>$PROJ_DIR$\freeRTOS\include</path>
+        <path>$PROJ_DIR$\</path>
+    </asmIncludePath>
+
+    <defines>
+        <define>__mega4809__</define>
+        <define>F_CPU=3333333</define>
+    </defines>
+
+    <asmDefines>
+        <define>__mega4809__</define>
+    </asmDefines>
+
+    
+
+    <files>
+
+            <path>FreeRTOSConfig.h</path>
+            <path>LED.c</path>
+            <path>LED.h</path>
+            <path>atmel_start.c</path>
+            <path>atmel_start.h</path>
+            <path>clock.c</path>
+            <path>clock.h</path>
+            <path>clock_interface.h</path>
+            <path>driver_isr.c</path>
+            <path>keyboard.c</path>
+            <path>keyboard.h</path>
+            <path>main.c</path>
+            <path>spi0.c</path>
+            <path>spi0.h</path>
+            <path>terminal.c</path>
+            <path>terminal.h</path>
+    
+
+        <group name="OLED">
+            <path>OLED/font.c</path>
+            <path>OLED/font.h</path>
+            <path>OLED/oled.c</path>
+            <path>OLED/oled.h</path>
+            <path>OLED/oled_pins.h</path>
+            <path>OLED/ssd1306.c</path>
+            <path>OLED/ssd1306.h</path>
+        </group>
+
+        <group name="config">
+            <path>config/clock_config.h</path>
+        </group>
+
+        <group name="freeRTOS">
+            <path>freeRTOS/croutine.c</path>
+            <path>freeRTOS/event_groups.c</path>
+            <path>freeRTOS/list.c</path>
+            <path>freeRTOS/queue.c</path>
+            <path>freeRTOS/stream_buffer.c</path>
+            <path>freeRTOS/tasks.c</path>
+            <path>freeRTOS/timers.c</path>
+        </group>
+
+        <group name="freeRTOS/include">
+            <path>freeRTOS/include/FreeRTOS.h</path>
+            <path>freeRTOS/include/StackMacros.h</path>
+            <path>freeRTOS/include/croutine.h</path>
+            <path>freeRTOS/include/deprecated_definitions.h</path>
+            <path>freeRTOS/include/event_groups.h</path>
+            <path>freeRTOS/include/list.h</path>
+            <path>freeRTOS/include/message_buffer.h</path>
+            <path>freeRTOS/include/mpu_prototypes.h</path>
+            <path>freeRTOS/include/mpu_wrappers.h</path>
+            <path>freeRTOS/include/portable.h</path>
+            <path>freeRTOS/include/projdefs.h</path>
+            <path>freeRTOS/include/queue.h</path>
+            <path>freeRTOS/include/semphr.h</path>
+            <path>freeRTOS/include/stack_macros.h</path>
+            <path>freeRTOS/include/stream_buffer.h</path>
+            <path>freeRTOS/include/task.h</path>
+            <path>freeRTOS/include/timers.h</path>
+        </group>
+
+        <group name="freeRTOS/portable/GCC/ATmega4809">
+            <path>freeRTOS/portable/GCC/ATmega4809/port.c</path>
+            <path>freeRTOS/portable/GCC/ATmega4809/portmacro.h</path>
+        </group>
+
+        <group name="freeRTOS/portable/MemMang">
+            <path>freeRTOS/portable/MemMang/heap.c</path>
+            <path>freeRTOS/portable/MemMang/heap_1.h</path>
+            <path>freeRTOS/portable/MemMang/heap_2.h</path>
+            <path>freeRTOS/portable/MemMang/heap_3.h</path>
+            <path>freeRTOS/portable/MemMang/heap_4.h</path>
+            <path>freeRTOS/portable/MemMang/heap_5.h</path>
+        </group>
+
+        <group name="include">
+            <path>include/atmel_start_pins.h</path>
+            <path>include/bod.h</path>
+            <path>include/ccp.h</path>
+            <path>include/clkctrl.h</path>
+            <path>include/cpuint.h</path>
+            <path>include/driver_init.h</path>
+            <path>include/port.h</path>
+            <path>include/protected_io.h</path>
+            <path>include/rstctrl.h</path>
+            <path>include/slpctrl.h</path>
+            <path>include/system.h</path>
+        </group>
+
+        <group name="src">
+            <path>src/bod.c</path>
+            <path>src/clkctrl.c</path>
+            <path>src/cpuint.c</path>
+            <path>src/driver_init.c</path>
+            <path>src/protected_io.S</path>
+            <path>src/slpctrl.c</path>
+        </group>
+
+        <group name="utils">
+            <path>utils/assembler.h</path>
+            <path>utils/atomic.h</path>
+            <path>utils/compiler.h</path>
+            <path>utils/interrupt_avr8.h</path>
+            <path>utils/utils.h</path>
+            <path>utils/utils_assert.h</path>
+        </group>
+
+        <group name="utils/assembler">
+            <path>utils/assembler/gas.h</path>
+            <path>utils/assembler/iar.h</path>
+        </group>
+    </files>
+</iarProjectConnection>
