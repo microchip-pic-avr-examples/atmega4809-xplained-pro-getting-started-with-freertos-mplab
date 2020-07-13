@@ -14,8 +14,11 @@ This is an example of how to get started with FreeRTOS™ on the AVR architectur
 
 ## Software Used
 
-- [MPLAB X IDE v5.40 or later](https://www.microchip.com/mplab/mplab-x-ide)
-- [Data Visualizer](https://www.microchip.com/mplab/avr-support/data-visualizer)
+- [MPLAB® X IDE v5.40 or later](https://www.microchip.com/mplab/mplab-x-ide)
+- [XC8 (v2.20)](https://www.microchip.com/mplab/compilers) alternativly [AVR/GNU C Compiler 5.4.0](https://www.microchip.com/mplab/avr-support/avr-and-arm-toolchains-c-compilers) can be used
+- Data Visualizer
+    - [MPLAB Data Visualizer](https://gallery.microchip.com/packages/MPLAB-Data-Visualizer-Standalone(Windows)/)
+    - [Studio Data visualizer](https://www.microchip.com/mplab/avr-support/data-visualizer)
 - ATmega_DFP 1.4.351 or later
 
 ## Hardware Used
@@ -26,15 +29,15 @@ This is an example of how to get started with FreeRTOS™ on the AVR architectur
 ## Setup
 
 * Connect the OLED1 Xplained Pro Extension Kit into the **EXT3** port on your Xplained Pro
-* Connect the ATmega4809 Xplained Pro to your computer with a micro usb cable.
 
 ## Operation
 
 1. Download the zip file or clone the example to get the source code
-2. Open `ATmega4809FreeRTOSExample.X` in MPLAB
-3. Make sure the kit is selected as the tool to be programmed under project settings
-4. Press the make and program button to program the device.
-5. Open data visualizer under to interact with the virtual comport on the devkit
+2. Connect the ATmega4809 Xplained Pro to your computer with a micro usb cable.
+3. Open `ATmega4809FreeRTOSExample.X` in MPLAB
+4. Make sure the kit is selected as the tool to be programmed under project settings
+5. Press the make and program button to program the device.
+6. Open your favorite terminal application or Data visualizer and open the serial port associated with the Xplained Pro.
 ## Conclusion
 
-We have here shown that it is possible to run FreeRTOS™ on an ATmega4809 and what advantages this might bring to your project.
+We have here shown that it is possible to run FreeRTOS™ on an ATmega4809 and what advantages this might bring to your project. As mentioned in the appnote [AN3007](#Related-Documentation) you can see the different tasks running and interact with them using the virtual com port on your ATmega4809 Xplained Pro or using the on board buttons. 
