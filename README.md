@@ -19,7 +19,7 @@ This is an example of how to get started with FreeRTOS™ on the AVR architectur
 - Data Visualizer
     - [MPLAB Data Visualizer](https://gallery.microchip.com/packages/MPLAB-Data-Visualizer-Standalone(Windows)/)
     - [Studio Data visualizer](https://www.microchip.com/mplab/avr-support/data-visualizer)
-- ATmega_DFP 1.4.351 or later
+- ATmega_DFP 2.2.108 or later
 
 ## Hardware Used
 
