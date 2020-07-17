@@ -3,7 +3,7 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>ATmega4809FreeRTOSExample</name>
+            <name>atmega4809-xplained-pro-getting-started-with-freertos-mplab</name>
             <creation-uuid>310cb7f0-4b5a-47b2-8efb-ce2b96563775</creation-uuid>
             <make-project-type>0</make-project-type>
             <c-extensions>c</c-extensions>
