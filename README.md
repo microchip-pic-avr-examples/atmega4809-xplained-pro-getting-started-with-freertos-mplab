@@ -34,7 +34,7 @@ This is an example of how to get started with FreeRTOS™ on the AVR architectur
 
 1. Download the zip file or clone the example to get the source code.
 2. Connect the ATmega4809 Xplained Pro to your computer with a micro usb cable.
-3. Open `ATmega4809FreeRTOSExample.X` in MPLAB.
+3. Open `atmega4809-xplained-pro-getting-started-with-freertos-mplab.X` in MPLAB.
 4. Make sure the kit is selected as the tool to be programmed under project settings.
 5. Press the make and program button to program the device.
 6. Open your favorite terminal application or Data visualizer and open the serial port associated with the Xplained Pro.
