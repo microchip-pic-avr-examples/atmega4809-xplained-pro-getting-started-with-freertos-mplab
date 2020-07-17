@@ -4,7 +4,7 @@
 
 # ATMEGA4809 Xplained Pro Getting Started With FreeRTOS™
 
-This is an example of how to get started with FreeRTOS™ on the AVR architecture with ATMEGA4809 Xplained Pro. FreeRTOS™ is a real-time operative system kernel which allows the MCU to operate with different tasks simultaneously. This is accomplished with mutexes, semaphores and software timers. [AN3007](#Related-Documentation) describes in detail how the FreeRTOS™ is being used to control the AVR.
+This is an example of how to get started with FreeRTOS™ on the AVR architecture with ATMEGA4809 Xplained Pro. FreeRTOS™ is a real-time operative system kernel which allows the MCU to operate with different tasks simultaneously. This is accomplished with mutexes, semaphores and software timers. [AN3007](https://www.microchip.com/wwwAppNotes/AppNotes.aspx?appnote=en610121) describes in detail how the FreeRTOS™ is being used to control the AVR.
 
 ## Related Documentation
 
@@ -15,7 +15,7 @@ This is an example of how to get started with FreeRTOS™ on the AVR architectur
 ## Software Used
 
 - [MPLAB® X IDE v5.40 or later](https://www.microchip.com/mplab/mplab-x-ide)
-- [XC8 (v2.20)](https://www.microchip.com/mplab/compilers) alternativly [AVR/GNU C Compiler 5.4.0](https://www.microchip.com/mplab/avr-support/avr-and-arm-toolchains-c-compilers) can be used
+- [XC8 (v2.20)](https://www.microchip.com/mplab/compilers) alternatively [AVR/GNU C Compiler 5.4.0](https://www.microchip.com/mplab/avr-support/avr-and-arm-toolchains-c-compilers) can be used
 - Data Visualizer
     - [MPLAB Data Visualizer](https://gallery.microchip.com/packages/MPLAB-Data-Visualizer-Standalone(Windows)/)
     - [Studio Data visualizer](https://www.microchip.com/mplab/avr-support/data-visualizer)
@@ -40,4 +40,4 @@ This is an example of how to get started with FreeRTOS™ on the AVR architectur
 6. Open your favorite terminal application or Data visualizer and open the serial port associated with the Xplained Pro.
 ## Conclusion
 
-We have here shown that it is possible to run FreeRTOS™ on an ATmega4809 and what advantages this might bring to your project. As mentioned in the appnote [AN3007](#Related-Documentation) you can see the different tasks running and interact with them using the virtual com port on your ATmega4809 Xplained Pro or using the on board buttons. 
+We have here shown that it is possible to run FreeRTOS™ on an ATmega4809 and what advantages this might bring to your project. As mentioned in the appnote [AN3007](https://www.microchip.com/wwwAppNotes/AppNotes.aspx?appnote=en610121) you can see the different tasks running and interact with them using the virtual com port on your ATmega4809 Xplained Pro or using the on board buttons. 
