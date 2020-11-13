@@ -34,9 +34,9 @@ TO MICROCHIP FOR THIS SOFTWARE.
 /* UART Defines */
 #define BAUD_RATE (9600)
 
-#define TERMINAL_HW USART1
-#define TERMINAL_RX_VECTOR USART1_RXC_vect
-#define TERMINAL_TX_PORT PORTC
+#define TERMINAL_HW USART3
+#define TERMINAL_RX_VECTOR USART3_RXC_vect
+#define TERMINAL_TX_PORT PORTB
 #define TERMINAL_TX_PIN PIN0_bm
 
 /* Private Data */
@@ -174,6 +174,6 @@ ISR(TERMINAL_RX_VECTOR)
 
 	xStreamBufferSendFromISR(terminal_rx_buffer, &data, sizeof(data), &xHigherPriorityTaskWoken);
 	if (xHigherPriorityTaskWoken == pdTRUE) {
-		taskYIELD_FROM_ISR();
+		vPortYieldFromISR();
 	}
 }

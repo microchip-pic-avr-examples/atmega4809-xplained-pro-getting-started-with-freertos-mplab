@@ -4,15 +4,14 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <logicalFolder name="config" displayName="config" projectFiles="true">
-        <itemPath>config/clock_config.h</itemPath>
-      </logicalFolder>
       <logicalFolder name="freeRTOS" displayName="freeRTOS" projectFiles="true">
         <logicalFolder name="include" displayName="include" projectFiles="true">
+          <itemPath>freeRTOS/include/FreeRTOS.h</itemPath>
+          <itemPath>freeRTOS/include/StackMacros.h</itemPath>
+          <itemPath>freeRTOS/include/atomic.h</itemPath>
           <itemPath>freeRTOS/include/croutine.h</itemPath>
           <itemPath>freeRTOS/include/deprecated_definitions.h</itemPath>
           <itemPath>freeRTOS/include/event_groups.h</itemPath>
-          <itemPath>freeRTOS/include/FreeRTOS.h</itemPath>
           <itemPath>freeRTOS/include/list.h</itemPath>
           <itemPath>freeRTOS/include/message_buffer.h</itemPath>
           <itemPath>freeRTOS/include/mpu_prototypes.h</itemPath>
@@ -21,7 +20,6 @@
           <itemPath>freeRTOS/include/projdefs.h</itemPath>
           <itemPath>freeRTOS/include/queue.h</itemPath>
           <itemPath>freeRTOS/include/semphr.h</itemPath>
-          <itemPath>freeRTOS/include/StackMacros.h</itemPath>
           <itemPath>freeRTOS/include/stack_macros.h</itemPath>
           <itemPath>freeRTOS/include/stream_buffer.h</itemPath>
           <itemPath>freeRTOS/include/task.h</itemPath>
@@ -29,49 +27,20 @@
         </logicalFolder>
         <logicalFolder name="portable" displayName="portable" projectFiles="true">
           <logicalFolder name="GCC" displayName="GCC" projectFiles="true">
-            <logicalFolder name="ATmega4809" displayName="ATmega4809" projectFiles="true">
-              <itemPath>freeRTOS/portable/GCC/ATmega4809/portmacro.h</itemPath>
+            <logicalFolder name="AVR_Mega0" displayName="AVR_Mega0" projectFiles="true">
+              <itemPath>freeRTOS/portable/GCC/AVR_Mega0/porthardware.h</itemPath>
+              <itemPath>freeRTOS/portable/GCC/AVR_Mega0/portmacro.h</itemPath>
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="MemMang" displayName="MemMang" projectFiles="true">
-            <itemPath>freeRTOS/portable/MemMang/heap_1.h</itemPath>
-            <itemPath>freeRTOS/portable/MemMang/heap_2.h</itemPath>
-            <itemPath>freeRTOS/portable/MemMang/heap_3.h</itemPath>
-            <itemPath>freeRTOS/portable/MemMang/heap_4.h</itemPath>
-            <itemPath>freeRTOS/portable/MemMang/heap_5.h</itemPath>
           </logicalFolder>
         </logicalFolder>
-      </logicalFolder>
-      <logicalFolder name="include" displayName="include" projectFiles="true">
-        <itemPath>include/driver_init.h</itemPath>
-        <itemPath>include/atmel_start_pins.h</itemPath>
-        <itemPath>include/bod.h</itemPath>
-        <itemPath>include/ccp.h</itemPath>
-        <itemPath>include/clkctrl.h</itemPath>
-        <itemPath>include/cpuint.h</itemPath>
-        <itemPath>include/port.h</itemPath>
-        <itemPath>include/protected_io.h</itemPath>
-        <itemPath>include/rstctrl.h</itemPath>
-        <itemPath>include/slpctrl.h</itemPath>
-        <itemPath>include/system.h</itemPath>
       </logicalFolder>
       <logicalFolder name="OLED" displayName="OLED" projectFiles="true">
         <itemPath>OLED/font.h</itemPath>
         <itemPath>OLED/oled.h</itemPath>
         <itemPath>OLED/oled_pins.h</itemPath>
         <itemPath>OLED/ssd1306.h</itemPath>
-      </logicalFolder>
-      <logicalFolder name="utils" displayName="utils" projectFiles="true">
-        <logicalFolder name="assembler" displayName="assembler" projectFiles="true">
-          <itemPath>utils/assembler/gas.h</itemPath>
-          <itemPath>utils/assembler/iar.h</itemPath>
-        </logicalFolder>
-        <itemPath>utils/assembler.h</itemPath>
-        <itemPath>utils/atomic.h</itemPath>
-        <itemPath>utils/compiler.h</itemPath>
-        <itemPath>utils/interrupt_avr8.h</itemPath>
-        <itemPath>utils/utils.h</itemPath>
-        <itemPath>utils/utils_assert.h</itemPath>
       </logicalFolder>
       <itemPath>clock.h</itemPath>
       <itemPath>clock_interface.h</itemPath>
@@ -80,7 +49,6 @@
       <itemPath>LED.h</itemPath>
       <itemPath>spi0.h</itemPath>
       <itemPath>terminal.h</itemPath>
-      <itemPath>atmel_start.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -90,14 +58,16 @@
                    displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="freeRTOS" displayName="freeRTOS" projectFiles="true">
+        <logicalFolder name="include" displayName="include" projectFiles="true">
+        </logicalFolder>
         <logicalFolder name="portable" displayName="portable" projectFiles="true">
           <logicalFolder name="GCC" displayName="GCC" projectFiles="true">
-            <logicalFolder name="ATmega4809" displayName="ATmega4809" projectFiles="true">
-              <itemPath>freeRTOS/portable/GCC/ATmega4809/port.c</itemPath>
+            <logicalFolder name="AVR_Mega0" displayName="AVR_Mega0" projectFiles="true">
+              <itemPath>freeRTOS/portable/GCC/AVR_Mega0/port.c</itemPath>
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="MemMang" displayName="MemMang" projectFiles="true">
-            <itemPath>freeRTOS/portable/MemMang/heap.c</itemPath>
+            <itemPath>freeRTOS/portable/MemMang/heap_1.c</itemPath>
           </logicalFolder>
         </logicalFolder>
         <itemPath>freeRTOS/croutine.c</itemPath>
@@ -113,22 +83,12 @@
         <itemPath>OLED/oled.c</itemPath>
         <itemPath>OLED/ssd1306.c</itemPath>
       </logicalFolder>
-      <logicalFolder name="src" displayName="src" projectFiles="true">
-        <itemPath>src/driver_init.c</itemPath>
-        <itemPath>src/bod.c</itemPath>
-        <itemPath>src/clkctrl.c</itemPath>
-        <itemPath>src/cpuint.c</itemPath>
-        <itemPath>src/protected_io.S</itemPath>
-        <itemPath>src/slpctrl.c</itemPath>
-      </logicalFolder>
       <itemPath>clock.c</itemPath>
       <itemPath>keyboard.c</itemPath>
       <itemPath>LED.c</itemPath>
       <itemPath>main.c</itemPath>
       <itemPath>spi0.c</itemPath>
       <itemPath>terminal.c</itemPath>
-      <itemPath>driver_isr.c</itemPath>
-      <itemPath>atmel_start.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -136,6 +96,9 @@
       <itemPath>Makefile</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>freeRTOS</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="free" type="2">
@@ -144,7 +107,7 @@
         <targetDevice>ATmega4809</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>nEdbgTool</platformTool>
+        <platformTool>EdbgTool</platformTool>
         <languageToolchain>XC8</languageToolchain>
         <languageToolchainVersion>2.20</languageToolchainVersion>
         <platform>3</platform>
@@ -228,7 +191,7 @@
         <property key="define-macros" value=""/>
         <property key="disable-optimizations" value="false"/>
         <property key="extra-include-directories"
-                  value=".\.;include;utils/assembler;utils;OLED;freeRTOS/portable/MemMang;freeRTOS/include;freeRTOS/portable/GCC/ATmega4809;config"/>
+                  value=".\.;freeRTOS;freeRTOS/include;freeRTOS/portable/MemMang;freeRTOS\portable\GCC\AVR_Mega0;include;utils/assembler;utils;OLED;config"/>
         <property key="favor-optimization-for" value="-speed,+space"/>
         <property key="garbage-collect-data" value="true"/>
         <property key="garbage-collect-functions" value="true"/>
@@ -825,7 +788,7 @@
         <targetDevice>ATmega4809</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>nEdbgTool</platformTool>
+        <platformTool>EdbgTool</platformTool>
         <languageToolchain>XC8</languageToolchain>
         <languageToolchainVersion>2.20</languageToolchainVersion>
         <platform>3</platform>
@@ -909,7 +872,7 @@
         <property key="define-macros" value=""/>
         <property key="disable-optimizations" value="false"/>
         <property key="extra-include-directories"
-                  value=".\.;include;utils/assembler;utils;OLED;freeRTOS/portable/MemMang;freeRTOS/include;freeRTOS/portable/GCC/ATmega4809;config"/>
+                  value=".\.;freeRTOS;freeRTOS/include;freeRTOS/portable/MemMang;freeRTOS\portable\GCC\AVR_Mega0;include;utils/assembler;utils;OLED;config"/>
         <property key="favor-optimization-for" value="-speed,+space"/>
         <property key="garbage-collect-data" value="true"/>
         <property key="garbage-collect-functions" value="true"/>

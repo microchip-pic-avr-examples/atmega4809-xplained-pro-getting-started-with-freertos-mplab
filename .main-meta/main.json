@@ -3,27 +3,27 @@
     "category": "com.microchip.ide.project",
     "content": {
         "metaDataVersion": "1.1.0",
-        "name": "com.microchip.mcu8.mplabx.project.",
-        "version": " ",
-        "displayName": "  ",
-        "projectName": "",
-        "shortDescription": "",
+        "name": "com.microchip.mcu8.mplabx.project.atmega4809-xplained-pro-getting-started-with-freertos-mplab",
+        "version": "1.0.0",
+        "displayName": "Getting Started with FreeRTOS on megaAVR® 0-series",
+        "projectName": "atmega4809-xplained-pro-getting-started-with-freertos-mplab",
+        "shortDescription": "This is an example of how to get started with FreeRTOS™ on the AVR architecture with ATMEGA4809 Xplained Pro. FreeRTOS™ is a real-time operative system kernel which allows the MCU to operate with different tasks simultaneously. This is accomplished with mutexes, semaphores and software timers.",
         "ide": {
-            "name": "",
-            "semverRange": ""
+            "name": "MPLABX",
+            "semverRange": ">=5.40"
         },
         "compiler": [
-			{
-				"name": "",
-				"semverRange": ""
-			}
-		],
+            {
+                "name": "XC8",
+                "semverRange": "^2.20"
+            }
+        ],
         "dfp": {
-            "name": "",
-            "semverRange": ""
+            "name": "ATmega_DFP",
+            "semverRange": "^2.2.108"
         },
         "configurator": {
-            "name": "",
+            "name": "N/A",
             "semverRange": ""
         },
         "device": {
@@ -32,37 +32,57 @@
             "content": {
                 "metaDataVersion": "1.0.0",
                 "category": "com.microchip.device",
-                "name": "",
+                "name": "ATmega4809",
                 "versionRange": "*"
             }
         },
-        "author": "",
+        "author": "Microchip",
         "subcategories": [
-            "",
             [
-               "Peripherals", ""
+                "Peripherals",
+                "TCB"
             ],
             [
-               "Peripherals", ""
-            ]            			
+                "Peripherals",
+                "USART"
+            ],
+            [
+                "Peripherals",
+                "SPI"
+            ],
+            [
+                "Peripherals",
+                "GPIO"
+            ],
+            [
+                "Development Kit",
+                "ATmega4809 Xplained Pro"
+            ],
+            [
+                "Supporting Tools",
+                "MPLAB Data Visualizer"
+            ]
         ],
         "peripherals": [
-            "",""
+            "TCB",
+            "USART",
+            "SPI",
+            "GPIO"
         ],
         "keywords": [
             "",
-            ""			
+            ""
         ],
-		"additionalData": {
-			"longDescription": {
-				"metaDataVersion": "1.0.0",
-				"category": "com.microchip.portal.fileRef",
-				"content": {
-					"metaDataVersion": "1.0.0",
-					"fileName": "./README.md",
-					"mimeType": "text/markdown"
-				}
-			}
-		}
-	}
+        "additionalData": {
+            "longDescription": {
+                "metaDataVersion": "1.0.0",
+                "category": "com.microchip.portal.fileRef",
+                "content": {
+                    "metaDataVersion": "1.0.0",
+                    "fileName": "./README.md",
+                    "mimeType": "text/markdown"
+                }
+            }
+        }
+    }
 }
