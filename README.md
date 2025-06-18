@@ -14,12 +14,12 @@ This is an example of how to get started with FreeRTOS™ on the AVR architectur
 
 ## Software Used
 
-- [MPLAB® X IDE v5.40 or later](https://www.microchip.com/mplab/mplab-x-ide)
-- [XC8 (v2.20)](https://www.microchip.com/mplab/compilers) alternatively [AVR/GNU C Compiler 5.4.0](https://www.microchip.com/mplab/avr-support/avr-and-arm-toolchains-c-compilers) can be used
+- [MPLAB® X IDE v6.25 or later](https://www.microchip.com/mplab/mplab-x-ide)
+- [XC8 (v3.00)](https://www.microchip.com/mplab/compilers) alternatively [AVR/GNU C Compiler 5.4.0](https://www.microchip.com/mplab/avr-support/avr-and-arm-toolchains-c-compilers) can be used
 - Data Visualizer
     - [MPLAB Data Visualizer](https://gallery.microchip.com/packages/MPLAB-Data-Visualizer-Standalone(Windows)/)
     - [Studio Data visualizer](https://www.microchip.com/mplab/avr-support/data-visualizer)
-- ATmega_DFP 2.2.108 or later
+- ATmega_DFP 3.4.282 or later
 
 ## Hardware Used
 
