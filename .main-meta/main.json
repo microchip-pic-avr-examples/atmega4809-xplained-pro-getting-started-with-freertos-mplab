@@ -10,17 +10,17 @@
         "shortDescription": "This is an example of how to get started with FreeRTOS™ on the AVR architecture with ATMEGA4809 Xplained Pro. FreeRTOS™ is a real-time operative system kernel which allows the MCU to operate with different tasks simultaneously. This is accomplished with mutexes, semaphores and software timers.",
         "ide": {
             "name": "MPLAB X",
-            "semverRange": ">=5.40.0"
+            "semverRange": ">=6.25.0"
         },
         "compiler": [
             {
                 "name": "XC8",
-                "semverRange": "^2.20.0"
+                "semverRange": "^3.00.0"
             }
         ],
         "dfp": {
             "name": "ATmega_DFP",
-            "semverRange": "^2.2.108"
+            "semverRange": "^3.4.282"
         },
         "configurator": {
             "name": "N/A",
